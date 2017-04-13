@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Guessing Game</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+  </head>
+  <body>
+
+      <div class='container' id='app'>
+
+        <div id='headers'>
+          <!-- Title and subtitles! -->
+          <header class='center'>
+            <h1 id='title'>Guessing Game</h1>
+            <p id='subtitle' class='tagline'>Guess a number between 1 and 100.</p>
+          </header>
+        </div>
+
+        <div id='main' class='center' >
+          <div id='input-parent' class="move-down">
+            <!-- Player's guess input, and submit button -->
+            <form >
+              Guess:<br>
+              <input id='player-input' class='center translucent' placeholder='#' maxlength='3' autofocus=autofocus></input>
+              <br><br>
+              <button class='center btn' id="submit">Go!</button>
+            </form>
+          </div>
+
+          <div id='guesses' class="move-down">
+            <!-- unordered list of guesses -->
+            <ul id='past-guesses' class="list-inline center">
+              <li id='l0' class="guess list-group-item ">-</li>
+              <li id='l1'class="guess list-group-item">-</li>
+              <li id='l2' class="guess list-group-item">-</li>
+              <li id='l3' class="guess list-group-item">-</li>
+              <li id='l4' class="guess list-group-item">-</li>
+            </ul>
+          </div>
+
+          <div id="menu-btns" class="move-down">
+            <!-- reset and hint buttons -->
+            <button type="button" class='center btn' id='reset'>Reset</button>
+            <button type="button" class='center btn' id='hint'>Hint</button>
+          </div>
+        </div>
+      </div>
+
+
+
+    <div id='footer'>
+        <div class='row'>
+          <div class='col-sm-4'>
+            <img class='img-responsive' id='fslogo' src='img/fa-logo@2x.png'></img>
+          </div>
+
+          <div class='col-sm-4 center' id='footerText'}>
+            <h4>Project by Katie</h4>
+          </div>
+
+          <div class='col-sm-4'>
+            <img class='img-responsive' id='ghlogo' style="text-align: right" src='img/grace_hopper_academy.png'></img>
+          </div>
+
+
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
+    <script src="js/GuessingGame.js"></script>
+  </body>
+</html>
