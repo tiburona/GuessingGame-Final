@@ -29,7 +29,7 @@
       }
 
       .translucent {
-          opacity:.6;
+          background:transparent;
       }
 
       ul {
