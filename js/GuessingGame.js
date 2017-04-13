@@ -102,11 +102,9 @@ $(document).ready(function() {
         var guess = +input.val();
         input.val('');
         var result = game.playersGuessSubmission(guess);
-        console.log(result)
          $('#title').text(result);
         if (result != 'You have already guessed that number.') {
             guessNum = (game.pastGuesses.length - 1).toString();
-            //var selector = "#\\" + guessNum.toString().charCodeAt(0).toString(16) + " " + guessNum.toString().substr(1);
             var selector = "#l" + guessNum.toString();
             $(selector).text(guess);
         }
@@ -152,8 +150,6 @@ $(document).ready(function() {
 
     $('#hint').on('click', function(e) {
         var arr = game.provideHint();
-        console.log(arr);
-        console.log(arr.map(function(x) {return x.toString()}).join(', '));
         $('#title').text(arr.map(function(x) {return x.toString()}).join(', '))
     })
 });
